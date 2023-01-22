@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de imagem de fundo</title>
+    <style>
+
+        h1{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            height: 100px;
+            width: 80%;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.562);
+        }
+
+        body{
+            background-image: url('../imagens/wallpaper002.jpg');
+        }
+        div.quadrado{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: rgba(128, 128, 128, 0.212);
+            
+        }
+
+        div#q1{
+
+            background-color: skyblue;
+
+        }
+        div#q2{
+
+            background-image: linear-gradient(to right, yellow, red);
+        }
+        div#q3{
+
+            background-image: url('../imagens/pattern003.png');
+         /* usar dois pontos barra para quando for voltar uma pasta na url */
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>O objetivo não é deixar o site bonit0, e sim testar imagens de fundo e se aprofundar nos estudos</h1>
+
+    <div class="quadrado" id="q1">
+
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+
+    </div>
+
+    
+
+</body>
+</html>
