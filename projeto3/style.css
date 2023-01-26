@@ -52,8 +52,8 @@ section{
     font-size: 4vw;
 }
 section.normal{
-    background-color: white;
-    color: black;
+    background-color: rgb(17, 16, 16);
+    color: rgb(255, 255, 255);
 }
 section.imagem{
     box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.493);
