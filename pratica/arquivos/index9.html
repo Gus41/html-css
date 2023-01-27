@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais tabelas</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color: gray;
+        }
+        main{
+            padding: 5px;
+            margin: auto;
+            width: 500px;
+            height: 700px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(128, 128, 128, 0.603);
+        }
+        table{
+            width: 450px;
+            margin: auto;
+            border-collapse: collapse;
+            
+        }
+        thead{
+            background-color: rgba(128, 128, 128, 0.397);
+        }
+        tr.linha{
+            background-color: gray;
+        }
+        td,th{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+            vertical-align: top; /* top, middle e bottom */
+        }
+        td.dado{
+            background-color: rgba(0, 128, 0, 0.363);
+        }
+        .num{
+            text-align: right;
+            background-color: rgba(29, 255, 29, 0.192);
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Uso de tabelas grandes</h1>
+        <!-- 
+            table
+                thead
+                    tr td th
+                tbody
+                    tr td th
+                tfoot
+                    tr td th
+            
+        -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">4523324</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">3423432</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">234543</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">23454321</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">234234</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">1234432</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">23134</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">23432</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">3423432</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">234543</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">23454321</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">234234</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">1234432</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">23134</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">23432</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <th>Total de habitantes</th>
+                <td class="num">000</td>
+
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
