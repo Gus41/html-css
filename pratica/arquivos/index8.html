@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        main{
+            padding: 5px;
+            text-align: center;
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(128, 128, 128, 0.603);
+        }
+        table{
+            width: 400px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        tr.linha{
+            background-color: gray;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td.dado{
+            background-color: rgba(0, 128, 0, 0.363);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com tabelas</h1>
+        <table>
+            <!--
+                Table
+                table row = linhas de tabela
+                table header = cabeçalho
+                table data = dados de tabela (td)
+            -->
+            <tr> <!-- Primeira linha -->
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr class="linha">
+                <td>A1</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td class="dado">B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+    </main>
+    
+</body>
+</html>
