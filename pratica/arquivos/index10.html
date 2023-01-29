@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color: gray;
+        }
+        main{
+            padding: 5px;
+            margin: auto;
+            width: 500px;
+            height: 200vh;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(128, 128, 128, 0.603);
+        }
+        table{
+            width: 450px;
+            margin: auto;
+            position: relative;
+            border-collapse: collapse;
+            
+        }
+        /* Deixar o cabeçalho fixo
+        
+        colocar posição relativa no objeto pai, posição sticky no objeto filho e colocar top 0 ou top -1
+        */
+        caption{
+            font-size: 1.3em;
+            padding: 5px;
+            background-color: gray;
+            font-weight: bold;
+        }
+        thead{
+            background-color: rgba(128, 128, 128, 0.397);
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
+        }
+        tbody > tr:nth-child(2n){ /* Fazer efeito zebrado a canda 2 linhas  || a cada 2 linhas uma é lightgray */
+            background-color: lightgrey;
+        }
+        tr.linha{
+            background-color: gray;
+        }
+        td,th{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+            vertical-align: top; /* top, middle e bottom */
+        }
+        td.dado{
+            background-color: rgba(0, 128, 0, 0.363);
+        }
+        .num{
+            text-align: right;
+            background-color: rgba(29, 255, 29, 0.192);
+        }
+        tfoot{
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Cabeçalho fixo</h1>
+        <!-- 
+            table
+            caption
+                thead
+                    tr td th
+                tbody
+                    tr td th
+                tfoot
+                    tr td th
+
+                    tr == linha
+                    td == dado
+                    th == titulo
+
+
+                colocar scope row para linhas ( em th )
+                e scope colum para colunas ( em th )
+        -->
+
+        <table>
+            <caption>legenda</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">4523324</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">3423432</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">234543</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">23454321</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">234234</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">1234432</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">23134</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">23432</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">3423432</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">234543</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">23454321</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">234234</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">1234432</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">23134</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">23432</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">4523324</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">3423432</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">234543</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">23454321</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">234234</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">1234432</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">23134</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">23432</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">3423432</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">234543</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">23454321</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">234234</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">1234432</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">23134</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">23432</td>
+                </tr>
+
+
+            </tbody>
+            <tfoot>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">000000</td>
+
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
