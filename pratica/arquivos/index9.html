@@ -40,6 +40,9 @@
         thead{
             background-color: rgba(128, 128, 128, 0.397);
         }
+        tbody > tr:nth-child(2n){ /* Fazer efeito zebrado a canda 2 linhas  || a cada 2 linhas uma é lightgray */
+            background-color: lightgrey;
+        }
         tr.linha{
             background-color: gray;
         }
@@ -56,7 +59,9 @@
             text-align: right;
             background-color: rgba(29, 255, 29, 0.192);
         }
-
+        tfoot{
+            background-color: lightgray;
+        }
 
     </style>
 </head>
