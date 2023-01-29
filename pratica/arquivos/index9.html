@@ -31,6 +31,12 @@
             border-collapse: collapse;
             
         }
+        caption{
+            font-size: 1.3em;
+            padding: 5px;
+            background-color: gray;
+            font-weight: bold;
+        }
         thead{
             background-color: rgba(128, 128, 128, 0.397);
         }
@@ -59,20 +65,29 @@
         <h1>Uso de tabelas grandes</h1>
         <!-- 
             table
+            caption
                 thead
                     tr td th
                 tbody
                     tr td th
                 tfoot
                     tr td th
-            
+
+                    tr == linha
+                    td == dado
+                    th == titulo
+
+
+                colocar scope row para linhas ( em th )
+                e scope colum para colunas ( em th )
         -->
 
         <table>
+            <caption>legenda</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -139,8 +154,8 @@
 
             </tbody>
             <tfoot>
-                <th>Total de habitantes</th>
-                <td class="num">000</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">000000</td>
 
             </tfoot>
         </table>
