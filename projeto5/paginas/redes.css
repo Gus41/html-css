@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+img{
+    width: 100vw;
+}
+a{
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(167, 86, 241);
+    text-shadow: 2px 2px 3px black;
+}
