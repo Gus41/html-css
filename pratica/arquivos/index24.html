@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+        body{
+            background-color: rgb(42, 11, 71);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            background-color: white;
+            width: 80vw;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+            padding: 3px;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.267);
+        }
+        #btn{
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-weight: bolder;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.685);
+            position: relative;
+            transition: .7s;
+        }
+        #btn:hover{
+            background-color: rgb(182, 106, 253);
+            top:-1px;
+            box-shadow:2px 2px 2px #000000;
+
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Testes de Formularios</h1>
+        <form autocomplete="off" action="saida.php">
+
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                <label for="sobr">Sobrenome</label>
+                <input type="text" name="sobr" id="sobr">
+            </p>
+            <p><input type="submit" value="Enviar" id="btn"></p>
+        </form>
+
+    </main>
+    
+</body>
+</html>
