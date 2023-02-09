@@ -19,7 +19,34 @@
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
             text-align: center;
         }
+        #btnE{
+            background-color: rgb(51, 255, 0);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bolder;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.637);
+        }
+        #btnL{
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bolder;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.637);
+        }
 
+        input{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        form{
+            border: 1px dashed red;
+        }
     </style>
 </head>
 <body>
@@ -30,17 +57,17 @@
         <form action="pagina.php" autocomplete="on" method="post">
 
             <p><label for="Nome">Nome:</label>
-                <input type="text" name="Nome" id="Nome">
+                <input autocomplete="username" size="15" placeholder="Usuario" type="text" name="Nome" id="Nome" required minlength="5" maxlength="15">
             </p>
             <p><label for="ipass">Senha:</label>
-                <input type="password" name="pass" id="ipass">
+                <input autocomplete="current-password" placeholder="Senha" size="15" type="password" name="pass" id="ipass" required minlength="8">
             </p>
             <p>
-                <input id="btn" type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
+                <input id="btnE" type="submit" value="Enviar">
+                <input id="btnL" type="reset" value="Limpar">
             </p>
 
-
+            <!-- Required é para tornar o Campo Obrigatorio -->
         </form>
 
     </main>
