@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            width: 80vw;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.596);
+
+        }
+        form{
+            background-color: rgba(128, 128, 128, 0.527);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+        #btn{
+            background-color: rgb(255, 255, 255);
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px black;
+            transition: .4s;
+        }
+        #btn:hover{
+            background-color: rgb(187, 187, 187);
+
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Teste de Formulário</h1>
+        <form action="pagina.php" method="get" autocomplete="on">
+
+            <p>
+                <label for="inome">Nome:</label>
+                <input maxlength="30" required type="text" name="inome" placeholder="Nome Completo" autocomplete="name" id="inome">
+            </p>
+            <p>
+                <label for="imedia">Média:</label>
+                <input type="number" value="5" required name="imedia" id="imedia" placeholder="0 a 10" step="0.1">
+            </p>
+            <p>
+                <label for="Per">Periodo Letivo:</label>
+                <input type="month" name="Per" value="2023-02" id="Per">
+            </p>
+            <p>
+                <label for="idia">Dia na Prova:</label>
+                <input type="date" name="idia" id="idia">
+            </p>
+            <p>
+                <label for="hora">Hora da Prova:</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+            <p>
+                <input id="btn" type="submit" value="Enviar">
+                <input id="btn" type="reset" value="Limpar Campos">
+            </p>
+
+
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
