@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color: white;
+            width: 80vw;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.651);
+        }
+        input{
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.534);
+        }
+        legend{
+            text-align: left;
+            font-size: smaller;
+        }
+        .btn{
+            background-color: rgb(147, 147, 236);
+            padding: 5px;
+            border: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.726);
+        }
+        .btn:hover{
+            transition: .5s;
+            background-color: white;
+            
+        }
+        #check{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Formulário</h1>
+        <form action="pagina.php" method="get">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="Masc"><label for="Masc">Masc</label>
+                <input type="radio" name="sexo" id="fem"><label for="fem">Fem</label>
+                <!--Colocar o mesmo name nos inputs de radio para apenas um ser marcado -->
+            </fieldset>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </p>
+                <p>
+                    <label for="imail">E-mail:</label>
+                    <input type="email" autocomplete="email" name="imail" id="imail">
+                </p>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" id="itel" name="itel" autocomplete="tel">
+                </p>
+            </fieldset>
+           
+            <fieldset id="check">
+                <legend>Checkbox</legend>
+                <input type="checkbox" name="item1" id="item1"><label for="item1">Item1</label><br>
+                <input type="checkbox" name="Item2" id="Item2"><label for="Item2">Item2</label><br>
+                <input type="checkbox" name="Item3" id="Item3"><label for="Item3">Item3</label><br>
+                <input type="checkbox" name="Item4" id="Item4"><label for="Item4">Item4</label><br>
+                <input type="checkbox" name="Item5" id="Item5"><label for="Item5">Item5</label><br>
+                <input type="checkbox" name="item6" id="Item6"><label for="Item6">Item6</label><br>
+            </fieldset>
+            <p>
+                <input class="btn" type="submit" value="Enviar">
+                <input class="btn" type="reset" value="Limpar">
+            </p>
+                
+        </form>
+    </main>
+    
+</body>
+</html>
