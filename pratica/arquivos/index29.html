@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+
+        body{
+            background-color: black;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 4, 255, 0.219);
+            text-align: center;
+        }
+        fieldset{
+            border-radius: 10px;
+        }
+        legend{
+            text-align: left;
+        }
+        #btn{
+            background-color: white;
+            border: none;
+            box-shadow: 2px 2px 4px black;
+            border-radius: 5px;
+            padding: 8px;
+            transition: .4s;
+        }
+        #btn:hover{
+            background-color: rgb(201, 200, 200);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Teste de Formulários</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>test</legend>
+                <p>
+                    <label for="icor">Cor: </label>
+                    <input type="color" value="#ffffff" name="cor" id="icor">
+                </p>
+                <p>
+                    <label for="irange">Nivél de satisfação:</label>
+                    <input type="range" name="range" max="10" min="1" id="irange">
+                </p>
+                <p>
+                    <label for="ifile">Escolha um arquivo</label>
+                    <input type="file" name="file" id="ifile">
+                </p>
+                <p>
+                    <label for="iestado">Seu Estado:</label>
+                    <select name="iest" id="iest">
+                        <optgroup label="Grupo 1">
+                            <option value="Sp">São Paulo</option>
+                            <option value="Mt">Mato Grosso</option>
+                            <option value="Sc">Santa Catarina</option>
+                        </optgroup>
+
+                        <optgroup label="Grupo 2">
+                            <option value="Rs" selected>Rio Grande do Sul</option>
+                            <option value="Rj">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                    </select>
+                    <p>
+                        <label for="iprof">Profissão</label>
+                        <input type="text" name="prof" id="iprof" list="lista">
+                        <datalist id="lista">
+                            <option value="adm">Administrados</option>
+                            <option value="Cont">Contabilizador</option>
+                            <option value="Prof">Professor</option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="imes">Mensagem:</label>
+                        <textarea name="imes" id="imes" cols="30" rows="2"></textarea>
+                    </p>
+                </p>
+                <p>
+                    <input id="btn" type="submit" value="Enviar Dados">
+                    <input type="reset" id="btn" value="Limpar">
+                </p>
+        
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>
