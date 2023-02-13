@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        body{
+            background-color: rgb(3, 3, 20);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+            width: auto;
+            text-align: center;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.664);
+        }
+        .btn{
+            background-color: white;
+            border: none;
+            padding: 7px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.747);
+            border-radius: 8px;
+            transition: .4s;
+            
+        }
+        .btn:hover{
+            background-color: rgb(212, 212, 212);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testes</h1>
+        <form action="#" autocomplete="on">
+            <fieldset>
+                <legend>Test</legend>
+                <p>
+                    <label for="in1">Numero 1:</label>
+                    <input type="number" required name="in1" id="in1" 
+                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                    
+                </p>
+                <p>
+                    <label for="in2">Numero 2:</label>
+                    <input type="number" name="in2" required id="in2"
+                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" >
+                </p>
+                <p>
+                    <label for="isoma">Soma:</label>
+                    <output id="isoma" name="soma">0</output>
+                </p>
+                <p>
+                    <label for="irange">Numero:</label>
+                    <input type="range" name="irange" min="0" max="10" value="2" id="irange"
+                    oninput="ival.innerHTML = Number(irange.value)">
+                    <output id="ival">2</output>
+                </p>
+                <p>
+                    <label for="iano">Em que ano vc nasceu:</label>
+                    <input type="number" name="iano" id="iano" min="1900" max="2023" value="2000"
+                    oninput="func()">
+                </p>
+                <p>
+                    <label for="idade">Sua idade é:</label>
+                    <output id="idade">23</output>
+                </p>
+                <p>
+                    <input type="submit" name="submit" class="btn" value="Enviar">
+                    <input type="reset" value="Limpar" class="btn">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    <script>
+        function func(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
