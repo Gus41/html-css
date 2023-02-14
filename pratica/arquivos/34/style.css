@@ -4,7 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+body{
+    background-color: rgb(3, 3, 27);
+}
 html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -25,6 +27,7 @@ menu li{
 menu ul{
     list-style-type: none;
     background-color: rgb(38, 14, 61);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
 }
 article{
     width: 600px;
@@ -32,6 +35,8 @@ article{
     text-align: justify;
     margin: auto;
     padding: 10px;
+    background-color: white;
+    border-radius: 10px;
 }
 article h2{
     text-align: center;
