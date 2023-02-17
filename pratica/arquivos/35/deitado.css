@@ -1,1 +1,5 @@
 @charset "UTF-8";
+/* Configurações deitado (landscape) */
+body{
+    background-color: orange;
+}
