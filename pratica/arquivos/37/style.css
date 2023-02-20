@@ -17,8 +17,10 @@ body{
     background: black url(../imagens/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
+    padding: 10px;
 }
 main{
+    margin-top: 10px;
     padding-top: 10px;
     background-color: rgba(255, 255, 255, 0.466);
     width: 90vw;
