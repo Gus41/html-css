@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de agrupamento</title>
+    <style>
+        body{
+            background-color: rgb(80, 79, 79);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        nav{
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.671);
+        }
+        nav > a{
+            padding: 1px 15px;
+            margin: auto;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgba(32, 32, 32, 0.671);
+        }
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            border-radius: 5px;
+        }
+        article{
+            background-color: gray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(71, 69, 69);
+            padding: 5px;
+        }
+        footer > p{
+            margin: 0;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: aliceblue;
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header> <!-- cabeçalho -->
+
+        <h1>Site</h1>
+
+        <nav>
+            <a title="link né" href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+
+    </header>
+
+    <main> <!-- Principal -->
+
+        <section id="assuntos">
+
+        </section>
+
+        <section id="noticias">
+
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt explicabo ut architecto vitae veniam ab quia animi accusantium a placeat doloribus, aliquam omnis minima iure aperiam voluptas ad esse dolorem?</p>
+                <aside>Escrito por fulamoo</aside>
+            </article>
+        </section>
+    </main>
+
+    <footer> <!-- Rodapé -->
+
+        <p>desenvolvido por Fulano</p>
+
+    </footer>
+
+    <div id="bola"></div>
+    
+</body>
+</html>

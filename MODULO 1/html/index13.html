@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens adaptativas</title>
+    <link rel="shortcut icon" href="iconeHTML.ico" type="image/x-icon">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em um dispositivo diferente
+        ou apenas aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagensHTML/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagensHTML/foto-M.png" type="image/png">
+        <img src="imagensHTML/foto-G.png" alt="Foto-G">
+    </picture>
+
+    <h1>Inserindo audios em html </h1>
+    <p>Aprendendo a reporudizr audios em html5 </p>
+
+    
+    <!--MP3 WAV OGG -->
+    <audio preload="auto" autoplay controls loop>
+        <source src="Audios/Audio1.mp3" type="audio/mpeg">
+        <source src="Audios/Audio1.ogg" type="audio/ogg">
+        <source src="Audios/Audio1.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reporudizr audios</p>
+    </audio>   
+    
+</body>
+</html>

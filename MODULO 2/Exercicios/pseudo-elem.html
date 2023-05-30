@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(128, 0, 53);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: rgba(250, 48, 48, 0.514);
+        }
+        .especial::after{
+            content: ' link';
+            color: gray;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .especial::before{
+
+            content: ' link ';
+            color: gray;
+            text-decoration: none;
+            font-weight: normal;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCv1qPOx3_Za7pEuvADGT6pw" target="_blank">Repositorio</a></li>
+        <li><a href="https://www.youtube.com/channel/UCv1qPOx3_Za7pEuvADGT6pw" target="_blank" class="especial">Canal do YT</a></li>
+        <li><a href="https://www.youtube.com/channel/UCv1qPOx3_Za7pEuvADGT6pw" target="_blank">Instagram</a></li>
+    </ul>
+    
+</body>
+</html>
