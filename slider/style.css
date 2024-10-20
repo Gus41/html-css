@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.slider-container{
+    overflow: hidden;
+    padding: 10px 0;
+    background-color: white;
+    white-space: nowrap;
+}
+.slider{
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+.slider img{
+    height: 120px;
+    margin: 0 5px;
+}
