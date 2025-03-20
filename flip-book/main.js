@@ -83,3 +83,30 @@ function goPrevPage() {
         currentLocation--;
     }
 }
+
+// Gesture handler
+let startX, startY, endX, endY;
+
+document.addEventListener("touchstart", function (event) {
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+});
+
+document.addEventListener("touchmove", function (event) {
+    endX = event.touches[0].clientX;
+    endY = event.touches[0].clientY;
+});
+
+document.addEventListener("touchend", function () {
+    let deltaX = endX - startX;
+    let deltaY = endY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX > 0) {
+            goPrevPage()
+        } else {
+            goNextPage()
+        }
+    }
+
+});
