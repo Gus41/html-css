@@ -136,9 +136,7 @@ i {
 
 /* Mobile styles */
 @media (max-width: 612px) {
-    body {
-      background-color: lightblue;
-    }
+
     .book {
         max-width: 165px;
         height: 250px;
