@@ -17,7 +17,8 @@ body {
 /* Book */
 .book {
     position: relative;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 500px;
     transition: transform 0.5s;
 }
@@ -100,6 +101,13 @@ i {
     transition: .7s color;
 }
 
+.mobile-buttons{
+    position: absolute;
+    bottom: 24px;
+    gap: 32px;
+    display: none;
+}
+
 /* Paper stack order */
 #p1 {
     z-index: 3;
@@ -125,3 +133,24 @@ i {
   align-items: center;
   text-align: center;
 }
+
+/* Mobile styles */
+@media (max-width: 612px) {
+    body {
+      background-color: lightblue;
+    }
+    .book {
+        max-width: 165px;
+        height: 250px;
+    }
+    h1{
+        font-size: 14px;
+    }
+    .mobile-buttons{
+        display: flex;
+    }
+    .desktop-button{
+        display: none;
+    }
+  }
+  

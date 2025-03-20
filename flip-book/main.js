@@ -1,6 +1,9 @@
-// References to DOM Elements
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
+const prevBtnMobile = document.querySelector("#prev-btn-mobile");
+const nextBtnMobile = document.querySelector("#next-btn-mobile");
+
+
 const book = document.querySelector("#book");
 
 const paper1 = document.querySelector("#p1");
@@ -10,6 +13,9 @@ const paper3 = document.querySelector("#p3");
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
+
+prevBtnMobile.addEventListener("click", goPrevPage);
+nextBtnMobile.addEventListener("click", goNextPage);
 
 // Business Logic
 let currentLocation = 1;
